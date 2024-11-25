@@ -1,11 +1,9 @@
 <?php
 session_start(); // Inicializa a sessão
-
 // Verifica se o carrinho está vazio e inicializa, caso não exista
 if (!isset($_SESSION['carrinho'])) {
     $_SESSION['carrinho'] = [];
 }
-
 // Lógica para remover item do carrinho
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (isset($_POST['remover_item'])) {
@@ -17,7 +15,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         header('Location: carrinho.php');
         exit();
     }
-
     // Lógica para atualizar quantidade
     if (isset($_POST['atualizar_quantidade'])) {
         $index = isset($_POST['index']) ? (int)$_POST['index'] : null;
@@ -29,7 +26,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         exit();
     }
 }
-
 // Calcula o subtotal e o total
 $subtotal = 0;
 $frete = 77; // Valor fixo para o frete
@@ -38,10 +34,8 @@ foreach ($_SESSION['carrinho'] as $item) {
 }
 $total = $subtotal + $frete;
 ?>
-
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -54,7 +48,6 @@ $total = $subtotal + $frete;
     <!--inicio do banner   -->
     <div class="novoMenu">
         <!--inicio do container   -->
-
         <div class="container">
             <div class="navegador">
                 <div class="logo"></div>
@@ -71,14 +64,9 @@ $total = $subtotal + $frete;
                         <img src="assets/img/carrinho2.png" alt="Carrinho" width="30px" height="30px">
                     </a>
                 </nav>
-
-
             </div>
         </div>
-
 </body>
-
-
 <div class="corpo-categorias carrinho-compras">
     <table id="tabela-carrinho">
         <tr>
@@ -121,7 +109,6 @@ $total = $subtotal + $frete;
             </tr>
         <?php endif; ?>
     </table>
-
     <!-- Valor total -->
     <div class="valor-total">
         <table>
