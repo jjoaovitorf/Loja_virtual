@@ -125,5 +125,9 @@ $total = $subtotal + $frete;
                 <td id="total">R$ <?php echo number_format($total, 2, ',', '.'); ?></td>
             </tr>
         </table>
+
+        <a href="pagamento.php">
+     <button>Ir para pagamento</button>
+        </a>
     </div>
 </div>
