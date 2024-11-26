@@ -43,6 +43,13 @@ $total = $subtotal + $frete;
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/stylerodape.css">
     <link rel="stylesheet" href="assets/css/stylemenu.css">
+
+    <style>
+        body{
+
+            background: radial-gradient(var(--cor-fonte), var(--cor-btn-font));
+        }
+    </style>
 </head>
 <body>
     <!--inicio do banner   -->
@@ -55,7 +62,7 @@ $total = $subtotal + $frete;
                 <nav>
                     <ul id="MenuItens">
                         <li><a href="index.php">Inicio</a></li>
-                        <li><a href="produtos.">prphpodutos</a></li>
+                        <li><a href="produtos.php">produtos</a></li>
                         <li><a href="">Empresa</a></li>
                         <li><a href="">Contatos</a></li>
                         <li><a href="index.php">Sair</a></li>
