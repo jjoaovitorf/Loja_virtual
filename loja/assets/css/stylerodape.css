@@ -150,14 +150,14 @@ button {
     padding: 5px 10px;
     border: none;
     border-radius: 3px;
-    background-color: #007bff;
+    background-color: gray;
     color: #fff;
     font-size: 12px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: black;
 }
 
 button[name="remover_item"] {
@@ -188,3 +188,4 @@ button[name="remover_item"]:hover {
 
 
 /*  PAINEL ADMINISTRATIVO (No proprio codigo) */
+
