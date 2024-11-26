@@ -35,12 +35,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adicionar_carrinho'])
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/stylerodape.css">
     <link rel="stylesheet" href="assets/css/stylemenu.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Inclui jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
+   
+   <style>
+
+
+      body{ 
+         
+      color: black; 
+      background: radial-gradient(var(--cor-fonte), var(--cor-btn-font));
+      
+
+      }
+      
+      div .col-4{
+
+      background-color: white;
+      color: black; 
+      padding: 5px 30px; 
+      text-align: center; 
+      font-size: 15px; 
+      border: none; 
+      border-radius: 25px; 
+
+
+      }
+
+
+
+    </style>
+
 </head>
 <body>
 
-<!-- Início do Menu -->
-<div class="novoMenu">
+ <!-- Início do Menu -->
+ <div class="novoMenu">
     <div class="container">
         <div class="navegador">
             <div class="logo"></div>
@@ -60,32 +89,46 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adicionar_carrinho'])
             </nav>
         </div>
     </div>
-</div>
-<!-- Fim do Menu -->
+ </div>
+ <!-- Fim do Menu -->
 
-<div class="linha">
+ <div class="linha">
     <div class="col-4">
-        
+        <a href="ver-produto.html">
             <img src="assets/img/roupa11.webp" alt="Camisa de algodão, estampada VIAOUR">
         </a>
         <h4>Camisa de algodão, estampada VIAOUR</h4>
         <p>R$ 115,00</p>
-      
+        <div class="classificacao">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+        </div>
         <!-- Formulário para adicionar ao carrinho -->
         <form method="POST" class="form-adicionar-carrinho">
             <input type="hidden" name="produto" value="Camisa de algodão, estampada VIAOUR">
             <input type="hidden" name="preco" value="115.00">
             <input type="hidden" name="imagem" value="assets/img/roupa11.webp"> <!-- Passa a imagem -->
+        
             <button type="submit" name="adicionar_carrinho" class="adicionar-carrinho">Adicionar ao Carrinho</button>
         </form>
     </div>
 
     <div class="col-4">
+        <a href="ver-produto.html">
             <img src="assets/img/roupa10.webp" alt="Camisa de algodão, estampada listrada">
         </a>
         <h4>Camisa de algodão, estampada listrada</h4>
         <p>R$ 125,00</p>
-       
+        <div class="classificacao">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+        </div>
         <!-- Formulário para adicionar ao carrinho -->
         <form method="POST" class="form-adicionar-carrinho">
             <input type="hidden" name="produto" value="Camisa de algodão, estampada listrada">
@@ -96,11 +139,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adicionar_carrinho'])
     </div>
 
     <div class="col-4">
+        <a href="ver-produto.html">
             <img src="assets/img/roupa9.webp" alt="Camisa de algodão, estampada paris">
         </a>
         <h4>Camisa de algodão, estampada paris</h4>
         <p>R$ 132,00</p>
-        
+        <div class="classificacao">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+        </div>
         <!-- Formulário para adicionar ao carrinho -->
         <form method="POST" class="form-adicionar-carrinho">
             <input type="hidden" name="produto" value="Camisa de algodão, estampada paris">
@@ -112,11 +162,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adicionar_carrinho'])
 
 
     <div class="col-4">
+        <a href="ver-produto.html">
             <img src="assets/img/roupa8.webp" alt="Camisa de algodão, estampada california">
         </a>
-        <h4>Camisa de algodão, estampada california</h4>
+        <h4>Camisa de algodão, estampada</h4>
         <p>R$ 145,00</p>
-        
+        <div class="classificacao">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+        </div>
         <!-- Formulário para adicionar ao carrinho -->
         <form method="POST" class="form-adicionar-carrinho">
             <input type="hidden" name="produto" value="Camisa de algodão, estampada california">
@@ -129,11 +186,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adicionar_carrinho'])
 
 
     <div class="col-4">
+        <a href="ver-produto.html">
             <img src="assets/img/roupa7.webp" alt="Camisa de algodão, estampada paris">
         </a>
         <h4>Camisa de algodão, estampada paris</h4>
         <p>R$ 201,00</p>
-        
+        <div class="classificacao">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+        </div>
         <!-- Formulário para adicionar ao carrinho -->
         <form method="POST" class="form-adicionar-carrinho">
             <input type="hidden" name="produto" value="Camisa de algodão, estampada paris">
@@ -146,11 +210,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adicionar_carrinho'])
 
 
     <div class="col-4">
+        <a href="ver-produto.html">
             <img src="assets/img/roupa6.webp" alt="Camisa social marrom Manga Curta">
         </a>
         <h4>Camisa social marrom Manga Curta</h4>
         <p>R$ 69,00</p>
-        
+        <div class="classificacao">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+        </div>
         <!-- Formulário para adicionar ao carrinho -->
         <form method="POST" class="form-adicionar-carrinho">
             <input type="hidden" name="produto" value="Camisa social marrom Manga Curta">
@@ -161,11 +232,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adicionar_carrinho'])
     </div>
 
     <div class="col-4">
+        <a href="ver-produto.html">
             <img src="assets/img/roupa12.webp" alt="Camisa de algodão lisa">
         </a>
         <h4>Camisa de algodão lisa</h4>
         <p>R$ 87,00</p>
-        
+        <div class="classificacao">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+        </div>
         <!-- Formulário para adicionar ao carrinho -->
         <form method="POST" class="form-adicionar-carrinho">
             <input type="hidden" name="produto" value="Camisa de algodão lisa">
@@ -177,11 +255,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adicionar_carrinho'])
 
 
     <div class="col-4">
+        <a href="ver-produto.html">
             <img src="assets/img/camisa3.webp" alt="Camisa social azul Manga Curta">
         </a>
         <h4>Camisa social azul Manga Curta </h4>
         <p>R$ 110,00</p>
-       
+        <div class="classificacao">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+        </div>
         <!-- Formulário para adicionar ao carrinho -->
         <form method="POST" class="form-adicionar-carrinho">
             <input type="hidden" name="produto" value="Camisa social azul Manga Curta">
@@ -193,11 +278,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adicionar_carrinho'])
 
 
     <div class="col-4">
+        <a href="ver-produto.html">
             <img src="assets/img/camisa4.webp" alt="Camisa social branca de botão">
         </a>
         <h4>Camisa social branca de botão</h4>
         <p>R$ 99,00</p>
-        
+        <div class="classificacao">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+        </div>
         <!-- Formulário para adicionar ao carrinho -->
         <form method="POST" class="form-adicionar-carrinho">
             <input type="hidden" name="produto" value="Camisa social branca de botão">
@@ -209,11 +301,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adicionar_carrinho'])
 
 
     <div class="col-4">
+        <a href="ver-produto.html">
             <img src="assets/img/camisa5.webp" alt="Camisa de algodão Manga Curta">
         </a>
         <h4>Camisa de algodão Manga Curta</h4>
         <p>R$ 99,00</p>
-   
+        <div class="classificacao">
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+            <ion-icon name="star-outline"></ion-icon>
+        </div>
         <!-- Formulário para adicionar ao carrinho -->
         <form method="POST" class="form-adicionar-carrinho">
             <input type="hidden" name="produto" value="Camisa de algodão Manga Curta">
@@ -224,10 +323,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adicionar_carrinho'])
     </div>
 
     <!-- Outros produtos aqui -->
-</div>
+ </div>
 
-<!-- Início do Rodapé -->
-<footer>
+ <!-- Início do Rodapé -->
+ <footer>
     <div class="rodape">
         <div class="conteiner">
             <div class="linha">
@@ -251,8 +350,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['adicionar_carrinho'])
             </div>
         </div>
     </div>
-</footer>
-<!-- Fim do Rodapé -->
+ </footer>
+ <!-- Fim do Rodapé -->
 
 </body>
 </html>
