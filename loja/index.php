@@ -123,7 +123,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                                 <button type="submit" class="btn">Entrar</button>
                                 <a href="#">Esqueceu sua senha?</a>
                             </form>
-                            <form action="index.php" method="post" id="CadastroSite">
+                            <form action="#" method="post" id="CadastroSite">
                                 <input type="text" name="nome" placeholder="Nome completo">
                                 <input type="email" name="email" placeholder="E-mail de acesso">
                                 <input type="password" name="senha" placeholder="Digite sua senha">
