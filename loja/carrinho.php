@@ -54,8 +54,8 @@ $total = $subtotal + $frete;
                 <img src="assets/img/logoestilo.png" alt="loja virtual" width="125px">
                 <nav>
                     <ul id="MenuItens">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="produtos.html">produtos</a></li>
+                        <li><a href="index.php">Inicio</a></li>
+                        <li><a href="produtos.">prphpodutos</a></li>
                         <li><a href="">Empresa</a></li>
                         <li><a href="">Contatos</a></li>
                         <li><a href="index.php">Sair</a></li>
