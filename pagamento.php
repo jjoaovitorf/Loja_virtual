@@ -29,7 +29,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background: radial-gradient(var(--cor-fonte), var(--cor-btn-font));
     color: #333;
 }
 
@@ -63,7 +63,7 @@ fieldset {
 legend {
     font-size: 1.2em;
     font-weight: bold;
-    color: #4CAF50;
+    color: black;
 }
 
 /* Labels e campos de input */
@@ -102,14 +102,14 @@ input[type="text"]:focus {
 
 .resumo-pedido strong {
     font-size: 1.2em;
-    color: #4CAF50;
+    color: black;
 }
 
 /* Botão de finalização */
 button[type="submit"] {
     width: 100%;
     padding: 15px;
-    background-color: #4CAF50;
+    background-color: grey;
     color: white;
     font-size: 1.2em;
     border: none;
@@ -119,7 +119,7 @@ button[type="submit"] {
 }
 
 button[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: black;
 }
 
 /* Responsividade */
