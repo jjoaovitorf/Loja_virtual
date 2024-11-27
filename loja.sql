@@ -24,13 +24,17 @@ SET is_admin = 1
 WHERE email = 'admin@example.com';
 
 
+
 INSERT INTO estoque (nome, quantidade) VALUES
 ('Camisa de algodão, estampada VIAOUR', 10),
 ('Camisa de algodão, estampada listrada', 15),
-('Camisa de algodão, estampada paris', 8),
-('Camisa de algodão, estampada california', 12),
-('Camisa social marrom Manga Curta', 20),
-('Camisa de algodão lisa', 25),
-('Camisa social azul Manga Curta', 18),
+('Camisa de algodão, estampada paris', 20),
+('Camisa de algodão, estampada', 25),
+('Camisa de algodão, estampada paris', 30),
+('Camisa social marrom Manga Curta', 18),
+('Camisa de botão preta', 12),
+('Camisa social azul Manga Curta', 20),
 ('Camisa social branca de botão', 22),
-('Camisa de algodão Manga Curta', 30);
+('Camisa de algodão Manga Curta', 17),
+('Camisa de algodão preta', 19),
+('Camisa de algodão branca', 23);
