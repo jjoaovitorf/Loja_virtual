@@ -1,0 +1,190 @@
+/* Estilo geral do rodapé */
+footer {
+    background-color: black; /* Cor de fundo */
+    color: #ffffff; /* Cor do texto */
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+footer .rodape {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+footer .rodape .conteiner {
+    display: flex;
+    flex-wrap: wrap; /* Permite ajustar as colunas em telas menores */
+    gap: 20px; /* Espaçamento entre colunas */
+    justify-content: space-between; /* Distribuição uniforme */
+}
+
+footer .rodape .linha {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer .rodape-col-1,
+footer .rodape-col-2,
+footer .rodape-col-3,
+footer .rodape-col-4 {
+    flex: 1; /* Distribuição proporcional */
+    min-width: 200px; /* Largura mínima */
+}
+
+footer .rodape h3 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #f4f3f1; /* Destaque para os títulos */
+}
+
+footer .rodape p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+footer .rodape ul {
+    list-style: none; /* Remove marcadores */
+    padding: 0;
+    margin: 0;
+}
+
+footer .rodape ul li {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: #f1f1f1;
+}
+
+footer .rodape ul li:hover {
+    color: #fdfcf9; /* Destaque ao passar o mouse */
+    cursor: pointer;
+}
+
+footer .rodape .app-logo img {
+    width: 120px;
+    margin-right: 10px; /* Espaçamento entre as imagens */
+}
+
+footer .rodape img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+footer .rodape .direitos {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #a9a9a9; /* Cor menos destacada */
+    border-top: 1px solid #444; /* Linha divisória */
+    padding-top: 15px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    footer .rodape .conteiner {
+        flex-direction: column; /* Empilha as colunas */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    footer .rodape ul li {
+        text-align: center;
+    }
+
+    footer .rodape .app-logo {
+        justify-content: center;
+    }
+}
+
+
+/*  CARRINHO  */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+}
+
+.corpo-categorias.carrinho-compras {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#tabela-carrinho {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 15px;
+}
+
+#tabela-carrinho th,
+#tabela-carrinho td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+#tabela-carrinho th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#tabela-carrinho td img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
+input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: gray;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: black;
+}
+
+button[name="remover_item"] {
+    background-color: #dc3545;
+}
+
+button[name="remover_item"]:hover {
+    background-color: #c82333;
+}
+
+.valor-total {
+    margin-top: 20px;
+}
+
+.valor-total table {
+    width: 100%;
+    font-size: 14px;
+}
+
+.valor-total td {
+    padding: 8px 0;
+}
+
+.valor-total td:nth-child(2) {
+    text-align: right;
+    font-weight: bold;
+}
+
+
+/*  PAINEL ADMINISTRATIVO (No proprio codigo) */
